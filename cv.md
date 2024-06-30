@@ -30,7 +30,7 @@ __2022-Present__ - Advanced Chemistry Development (ACD/Labs)
 *******
 ## Languages
 
-*Russian - Native
-*English - B2-C1
+* Russian - Native
+* English - B2-C1
 
 
