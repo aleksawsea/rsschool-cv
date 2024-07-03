@@ -30,9 +30,11 @@ I've been working as a QA specialist for 2.5 years now and I've enjoyed it at th
 
 ## Code Example
 
-```function multiply(a, b){
+```
+function multiply(a, b){
      return a * b;
-   }```
+   }
+```
 ***
 
 ## Work Experience
