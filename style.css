@@ -9,13 +9,13 @@
 * {
   box-sizing: border-box;
 }
-header {
+.header {
   border: 1px solid blueviolet;
 }
-main {
+.main {
   border: 1px solid blue;
 }
-footer {
+.footer {
   border: 1px solid green;
 }
 body {
@@ -25,4 +25,36 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  color: rgb(218, 85, 127);
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav-link:hover {
+  color: #650764;
+}
+.cont-link {
+  color: rgb(218, 85, 127);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.cont-link:hover {
+  color: #650764;
 }
