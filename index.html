@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/svg/flower.ico">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#work-experience" class="nav-link">Work Experience</a></li>
+                    <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main-container">
+                <section class="section" id="profile">
+                    <h1 class="section-title">Aliaksandra Pynzar</h1>
+                    <img src="assets\img\photo.jpg" alt="avatar">
+                </section>
+                <section class="section" id="fill">
+                </section>
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="cont-list">
+                        <li class="cont-item"><b>Location:</b> Kutaisi, Georgia</li>
+                        <li class="cont-item"><b>Phone:</b> +995 599 011 876</li>
+                        <li class="cont-item"><b>Email:</b> alexandrapynzar57@gmail.com</li>
+                        <li class="cont-item"><a href="https://www.linkedin.com/in/alexandra-pynzar-279058261/"
+                                class="cont-link">LinkedIn</a></li>
+                    </ul>
+                </section>
+                <section class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
+                    <p>I’ve been working as a QA specialist for 2.5 years now and I’ve enjoyed it at the beginning, but
+                        I feel like I’m starting to lose interest and enthusiasm and I want to move on.
+                        When I started my job in the current company, I was a graduate of Chemistry faculty from BSU and
+                        had no experience in testing, so I had to learn everything from scratch. During my work, I
+                        acquired
+                        skills in working with chemical software (programs for drawing structures and reactions,
+                        processing
+                        spectra, databases), creating small C++ scripts to test new functions and classes, and I also
+                        studied
+                        python and RDKit functionality on my own to expand my capabilities. Now I'm looking for a place
+                        where
+                        I can develop my skills further.</p>
+                </section>
+                <section class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="cont-list">
+                        <li class="cont-item"><b>2018-2022</b> - Belarusian State University, Chemistry Faculty,
+                            Scientific
+                            and Pedagogical activity</li>
+                    </ul>
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="cont-list">
+                        <li class="cont-item">WebAPI</li>
+                        <li class="cont-item">Git</li>
+                        <li class="cont-item">TortoiseSVN</li>
+                        <li class="cont-item">SQL</li>
+                        <li class="cont-item">C++ scripts</li>
+                        <li class="cont-item">Manual software testing</li>
+                        <li class="cont-item">Python</li>
+                        <li class="cont-item">rdKit</li>
+                    </ul>
+                </section>
+                <section class="section" id="work-experience">
+                    <h2 class="section-title">Work Experience</h2>
+                    <ul class="cont-list">
+                        <li class="cont-item"><b>2022-Present</b> - Advanced Chemistry Development (ACD/Labs)</li>
+                    </ul>
+                </section>
+                <section class="section" id="languages">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="cont-list">
+                        <li class="cont-item">Russian - Native</li>
+                        <li class="cont-item">English - B2-C1</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Code Example</h2>
+                    <pre class="pre"><code>
+from rdkit import Chem
+from rdkit.Chem import Descriptors
+import matplotlib.pyplot as plt
+
+smiles_list = ["CCO", "CCN", "CCCC", "C1CCCCC1", "CC(=O)O"]
+
+properties = []
+for smiles in smiles_list:
+mol = Chem.MolFromSmiles(smiles)
+mol_weight = Descriptors.MolWt(mol)
+logp = Descriptors.MolLogP(mol)
+h_donors = Descriptors.NumHDonors(mol)
+h_acceptors = Descriptors.NumHAcceptors(mol)
+properties.append((mol_weight, logp, h_donors, h_acceptors))
+
+logp_values = [prop[1] for prop in properties]
+plt.hist(logp_values, bins=5)
+plt.xlabel('LogP')
+plt.ylabel('Number of Molecules')
+plt.show()
+</code></pre>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+
+</html>
