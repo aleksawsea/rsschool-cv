@@ -28,6 +28,15 @@ I've been working as a QA specialist for 2.5 years now and I've enjoyed it at th
 * __2018-2022__ - Belarusian State University, Chemistry Faculty, Scientific and Pedagogical activity
 ***
 
+## Code Example
+
+```
+function multiply(a, b){
+     return a * b;
+   }
+```
+***
+
 ## Work Experience
 
 * __2022-Present__ - Advanced Chemistry Development (ACD/Labs)
